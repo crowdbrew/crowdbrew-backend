@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - dbdata:/data/postgres
+  api:
+    image: node
+    command: node index.js
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - PGHOST=db
+      - PGDATABASE=postgres
+      - PGUSER=postgres
+
+volumes:
+  dbdata:
