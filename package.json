@@ -1,0 +1,25 @@
+{
+  "name": "crowdbrew-backend",
+  "version": "1.0.0",
+  "description": "Crow Brew backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crowdbrew/crowdbrew-backend.git"
+  },
+  "keywords": [
+    "beer"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crowdbrew/crowdbrew-backend/issues"
+  },
+  "homepage": "https://github.com/crowdbrew/crowdbrew-backend#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pg": "^6.1.2"
+  }
+}

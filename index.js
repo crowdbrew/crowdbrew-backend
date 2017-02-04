@@ -1,7 +1,7 @@
 'use strict';
 
 const app = require('./app');
-const port = process.env.PORT || 9000;
+const port = 8080;
 
 app.listen(port, (err) => {
   if (err) {

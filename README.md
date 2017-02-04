@@ -1,6 +1,16 @@
 # Crowd Brew backend
 
-## Start
+## First start
 ```
-docker-compose up
+docker-compose build
+```
+
+## Usage
+Start on background:
+```
+docker-compose up -d
+```
+Use `stop` to terminate background service:
+```
+docker-compose stop
 ```
